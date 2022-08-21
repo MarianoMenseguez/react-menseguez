@@ -5,9 +5,8 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <h1>Los piratas Celetes De Alberdi</h1>
       <div>
-        <ItemListContainer/>
+        <ItemListContainer />
       </div>
     </div>
   );

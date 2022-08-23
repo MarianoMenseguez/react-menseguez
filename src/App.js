@@ -5,9 +5,6 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <div>
-        <ItemListContainer />
-      </div>
     </div>
   );
 };

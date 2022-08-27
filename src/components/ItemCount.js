@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import "./ItemCount.css";
 import Swal from "sweetalert2";
 
 const ItemCount = ({ stock = 5, initial = 0 }) => {

@@ -1,11 +1,10 @@
-import ItemCount from "./ItemCount";
+import Item from "./Item";
 
-const ItemListContainer = () => {  
-  return (    
+const ItemListContainer = () => {
+  return (
     <div>
-      <ItemCount/>
-    <p>        Los mejores productos de la barra con mas aguante en argentina los encontras aca.      
-    </p>
-    </div>   
-  );};
-  export default ItemListContainer;
+      <Item/>
+    </div>
+  );
+};
+export default ItemListContainer;

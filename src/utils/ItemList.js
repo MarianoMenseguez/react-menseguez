@@ -2,7 +2,7 @@
 export const data = [
   {
     id: 1,
-    imagen: "musculosanegra.jpg",
+    imagen:"musculosanegra.jpg" ,
     name: "Musculosa Negra",
     stock: 5,
     price: 2000,

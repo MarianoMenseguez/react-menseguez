@@ -2,7 +2,7 @@
 export const data = [
   {
     id: 1,
-    imagen:"musculosanegra.jpg" ,
+    imagen: require("../assets/musculosanegra.png"),
     name: "Musculosa Negra",
     stock: 5,
     price: 2000,
@@ -10,7 +10,7 @@ export const data = [
   },
   {
     id: 2,
-    imagen: "musculosaroja.jpg",
+    imagen: require("../assets/musculosaroja.png"),
     name: "Musculosa Roja",
     stock: 5,
     price: 2000,
@@ -18,7 +18,7 @@ export const data = [
   },
   {
     id: 3,
-    imagen: "short.jpg",
+    imagen: require("../assets/short.png"),
     name: "Short negro",
     stock: 5,
     price: 2000,

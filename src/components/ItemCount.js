@@ -15,12 +15,12 @@ const ItemCount = ({ stock = 5, initial = 0 }) => {
 
   const increment = () => {
     if (counter < stock) {
-      setCounter(counter + 1);
+      setCounter(prev => prev + 1);
     }
   };
   const decrease = () => {
     if (counter > initial) {
-      setCounter(counter - 1);
+      setCounter(prev => prev - 1);
     }
   };
   return (

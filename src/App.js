@@ -1,10 +1,10 @@
 import NavBar from "../src/components/NavBar";
-import ItemListContainer from "../src/components/ItemListContainer";
+import ItemDetailContainer from "../src/components/ItemDetailContainer";
 const App = () => {
   return (
     <div>
       <NavBar />
-      <ItemListContainer />
+      <ItemDetailContainer />
     </div>
   );
 };

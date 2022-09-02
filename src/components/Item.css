@@ -4,6 +4,9 @@ background-color: rgb(24, 181, 233);
   margin: 0;
   padding: 0;
 }
+.Card {
+  flex-direction: column;
+}
 .addButton {
   display: flex;
   justify-content: center;
@@ -13,7 +16,7 @@ background-color: rgb(24, 181, 233);
   padding: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  background-color: #fec400;
+  background-color: black;
   resize: none;
   font-family: "Gentium Basic";
   text-transform: uppercase;
@@ -26,8 +29,8 @@ background-color: rgb(24, 181, 233);
   border: 1.5px solid white;
 }
 
-.productDescription {
-  color: #bababa;
+.details {
+  color: black;
   display: inline;
   font-family: 'Gentium Basic';
   font-size: 15px;
@@ -36,7 +39,7 @@ background-color: rgb(24, 181, 233);
 }
 
 .productTitle {
-  color: #bababa;
+  color: black;
   font-family: "Montaga";
   font-size: 18px;
   font-weight: 700;
@@ -69,7 +72,7 @@ background-color: rgb(24, 181, 233);
   font-family: 'Montaga';
   font-size: 16px;
   text-transform: uppercase;
-  color: #bababa;
+  color: black;
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +92,7 @@ background-color: rgb(24, 181, 233);
   width: 30px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  background-color: #fec400;
+  background-color: black;
   resize: none;
   font-family: "Gentium Basic";
   text-transform: uppercase;
@@ -109,7 +112,7 @@ background-color: rgb(24, 181, 233);
   align-items: center;
   height: 32px;
   width: 30px;
-  background-color: #fec400;
+  background-color: black;
   border: 1.5px solid black;
 
 }

@@ -2,13 +2,15 @@ import {useEffect, useState} from "react";
 import desafio from "../utils/Promesa";
 import ItemDetail from "./ItemDetail";
 import {data} from "../utils/ItemList";
+import { useParams } from "react-router-dom";
 
 export default function ItemDetailContainer() {
 
   const [oneProduct, setOneProduct] = useState();
+  const {id} = useParams();
 
   useEffect(() => {
-    desafio(data[2])
+    desafio(500, data.find(item => item.id == id))
       .then(result => setOneProduct(result))
       .catch(err => console.log(err))
   }, [])

@@ -9,8 +9,12 @@ export const data = [
     stock: 5,
     min:1,
     price: "$2000",
-    description: "Musculosa negra de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
-    category: "Musculosas",
+    details: "Musculosa negra de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
+    categoryId: 1,
+    category: {
+      name:"Musculosas",
+      id:1
+    }
   },
   {
     id: 2,
@@ -21,8 +25,12 @@ export const data = [
     stock: 5,
     min:1,
     price: "$2000",
-    description: "Musculosa Roja de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
-    category: "Musculosas",
+    details: "Musculosa Roja de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
+    categoryId: 1,
+    category: {
+      name:"Musculosas",
+      id:1
+    }
   },
   {
     id: 3,
@@ -33,7 +41,11 @@ export const data = [
     stock: 5,
     min:1,
     price: "$2000",
-    description: "Short negro de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
-    category: "Short",
+    details: "Short negro de la primera barra de cordoba. Producto de algodon sin poliester, de excelente calidad para disfrutar de todo el verano. En todos los talles disponibles",
+    categoryId: 2,
+    category: {
+      name:"Shores",
+      id:2
+    }
   },
 ];

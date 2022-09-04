@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Item.css";
 import desafio from "../utils/Promesa";
-import { data } from "../utils/ItemList";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+const { data } = require("../utils/ItemList");
 
 const onAdd= (quantity) => {
 	alert('Agregaste ' + quantity + ' elementos.')
@@ -11,12 +13,20 @@ const onAdd= (quantity) => {
 
 const Item = () => {
   const [products, setProducts] = useState([]);
+  const  {id}= useParams();
 
   useEffect(() => {
-    desafio(data)
+    if (id) {  
+    desafio(500, data.filter(item =>item.categoryId === id))
       .then((result) => setProducts(result))
       .catch((err) => console.log(err));
-  }, []);
+    } else {
+      desafio(500, data)
+      .then((result) => setProducts(result))
+      .catch((err) => console.log(err));
+    }
+  }, [id]);
+
   return (
     <>
     {products.map((item) => (
@@ -32,6 +42,7 @@ const Item = () => {
           </div>
           <div className="Details">
             <span>{item.details}</span>
+            <Link to={"/item/id"}> Details </Link>
             {/* <span>stock: {item.stock}</span> */}
           </div>
           <ItemCount stock={item.stock} initial={0} onAdd={onAdd}/>
